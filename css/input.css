@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100&family=Tilt+Prism&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (min-width: 768px) {
+.menu>li {
+    background: #000;
+    float: left;
+    position: relative;
+    transform: skewX(25deg);
+}
+}
+
+.menu li {
+    background: #000;
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+.menu>li>a {
+    transform: skewX(-25deg);
+}
+}
+
+.menu li a {
+    padding: 1em 2em;
+}
